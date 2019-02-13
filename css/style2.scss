@@ -1,0 +1,52 @@
+body { 
+    display: grid; 
+    grid-template-columns: 75% 25%; 
+    grid-template-rows: 30vh 50vh 20vh; /*Medida relativa*/ 
+}
+
+header, footer { 
+    grid-column: 1 / 3;
+}
+
+/* Estilos específicos y personalizables */ 
+body { 
+    margin: 0 auto; 
+    // max-width: 56em; 
+    max-width: 80vw; 
+    padding: 0; 
+}
+
+header, main, aside, footer { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+/* COLORS */
+
+/* Color palette */
+$rifle-green: #3A4F41;
+$dingy-dungeon: #B9314F;
+$tumbleweed: #D5A18E;
+$tea-rose: #DEC3BE;
+$platinum: #E1DEE3;
+
+body{
+    background-color: $rifle-green;
+}
+
+header{
+    background-color: $dingy-dungeon;
+}
+
+main{
+    background-color: $tumbleweed;
+}
+
+aside{
+    background-color: $tea-rose;
+}
+
+footer{
+    background-color: $platinum;
+}
